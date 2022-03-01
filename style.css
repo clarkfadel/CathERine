@@ -304,65 +304,69 @@ footer .copyright a:hover{
 
 /*Cart*/
 
-#cart-container{
+#products-container{
     overflow-x: auto;
 }
 
-#cart-container table{
+#products-container table{
     border-collapse: collapse
     width: 100%;
     table-layout: fixed;
     white-space: nowrap;
 }
 
-#cart-container table thead{
+#products-container table thead{
     font-weight: 700;
 }
 
-#cart-container table thead td{
+#products-container table thead td{
     background: #fd8c66;
     color: #fff;
     border: none;
     padding: 6px 0;
 }
 
-#cart-container table td{
+#products-container table td{
     border: 1px solid #b6b3b3;
     text-align: center;
 }
 
-#cart-container table td:nth-child(1){
+#products-container table td:nth-child(1){
     width: 100px;
 }
 
-#cart-container table td:nth-child(2),
+#products-container table td:nth-child(2),
 #cart-container table td:nth-child(3){
     width: 200px;
 }
 
-#cart-container table td:nth-child(4),
-#cart-container table td:nth-child(5),
-#cart-container table td:nth-child(6){
+#products-container table td:nth-child(4),
+#products-container table td:nth-child(5),
+#products-container table td:nth-child(6){
     width: 170px;
 }
 
-#cart-container table tbody img{
+#products-container table tbody img{
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
 
-#cart-container table tbody i{
+#products-container table tbody i{
     color: #8d8c89;
 }
 
-#cart-bottom .coupon>div,
-#cart-bottom .total>div {
+
+
+
+/*Cart Bottom*/
+#products-bottom .coupon>div,
+#products-bottom .totals>div {
     border: 1px solid #b6b3b3;
 }
 
-#cart-bottom .coupon h5,
-#cart-bottom .total h5 {
+#products-bottom .coupon h5,
+#products-bottom .totals h5 {
     background: #fd8c66;
     color: #fff;
     border: none;
@@ -370,25 +374,27 @@ footer .copyright a:hover{
     font-weight: 700;
 }
 
-#cart-bottom .coupon p,
-#cart-bottom .coupon input{
+#products-bottom .coupon p,
+#products-bottom .coupon input{
      padding: 0 12px;
 }
 
-#cart-bottom .coupon input{
+#products-bottom .coupon input{
     height: 44px;
 }
 
-#cart-bottom .coupon input,
-#cart-bottom .coupon button{
+#products-bottom .coupon input,
+#products-bottom .coupon button{
     margin: 0 0 20px 12px;
 }
 
-#cart-bottom .total div>div{
+#products-bottom .totals div>div{
     padding: 0 12px;
+    display: flex;
+    justify-content: between;
 }
 
-#cart-bottom .total h6{
+#products-bottom .totals h6{
     color: #2a2a2a;
 }
 
@@ -398,10 +404,40 @@ footer .copyright a:hover{
     height: 1px;
 }
 
-#cart-bottom .total div>button{
+#products-bottom .totals div>button{
     margin: 0 12px 20px 0;
     display: flex;
     justify-content: flex-end;
+}
+
+body {
+  margin: 25px;
+}
+
+.scart {
+  position: relative;
+}
+
+.scart:hover {
+  cursor: pointer;
+}
+
+.scart:active {
+  background: #cccccc;
+}
+
+.scart-notif {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 25px;
+  height: 25px;
+  background: #922724;
+  color: #black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 
