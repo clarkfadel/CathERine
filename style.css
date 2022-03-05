@@ -331,32 +331,34 @@ footer .copyright a:hover{
     text-align: center;
 }
 
-#products-container table td:nth-child(1){
+#products-container .products:nth-child(1){
     width: 100px;
 }
 
-#products-container table td:nth-child(2),
-#cart-container table td:nth-child(3){
+#products-container .products:nth-child(2),
+#cart-container .products:nth-child(3){
     width: 200px;
 }
 
-#products-container table td:nth-child(4),
-#products-container table td:nth-child(5),
-#products-container table td:nth-child(6){
+#products-container .products:nth-child(4),
+#products-container .products:nth-child(5),
+#products-container .products:nth-child(6){
     width: 170px;
 }
 
-#products-container table tbody img{
+#products-container .products img{
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
 
-#products-container table tbody i{
-    color: #8d8c89;
+#products-container .products i{
+    color: #black;
 }
-
-
+#products-container .products i:hover{
+color: coral;
+cursor: pointer;
+}
 
 
 /*Cart Bottom*/
