@@ -37,35 +37,53 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-  <div class="container-fluid">
-      <img src="pictures/logo.png" alt="logo" width="200" height="100">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i id="bar" class="fa-solid fa-bars-staggered"></i></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" href="#">Shop</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-          <li class="nav-item">
-              <a href="cart.html" class="scart">
-              <i class="fa-solid fa-cart-shopping"><span class="scart-notif"></span></i>
-                  </a>
-          </li>
+        <div class="container-fluid">
+            <img src="pictures/logo.png" alt="logo" width="200" height="100">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fa-solid fa-bars-staggered"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link active" href="shop.html">Shop</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                        </a>
+                </li>
 
       </ul>
+
+      <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!--Content-->
+            <div class="cart-content">
+                
+        </div>
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <!--Buy Button-->
+            <button type="button" class="btn-check-out">Buy Now</button>
+
+            <!--Cart Close-->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+
     </div>
   </div>
 </nav>
